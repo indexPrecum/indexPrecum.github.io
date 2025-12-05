@@ -8,13 +8,12 @@ int main(void) {
     C2HTML_OBJ(index, css_file, js_file);
     setup_file(&index, "Index Precum", "..");
 
-    h1("Today's mystery:");
-    br();
+    h1("Index Precum");
+    custom_tag("hr");
 
-    custom_tag("h2 id=\"day\"", .in_line = true);
-    br();
-    custom_tag("h2 id=\"mystery\"", .in_line = true);
 
+
+   
 
     end_file(&index);
     return 0;
