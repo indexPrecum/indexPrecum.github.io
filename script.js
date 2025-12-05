@@ -1,18 +1,41 @@
-const today = new Date()
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-const mysteries = {
-    Sunday: "Joyful Mysteries",
-    Monday: "Joyful Mysteries",
-    Tuesday: "Sorrowful Mysteries",
-    Wednesday: "Sorrowful Mysteries",
-    Thursday: "Luminous Mysteries",
-    Friday: "Sorrowful Mysteries",
-    Saturday: "Joyful Mysteries"
+const day_mystery = {
+    "domingo": { misterio: "Gloriosos", misterioLatim: "Mysteria Gloriosa" },
+    "segunda-feira": { misterio: "Gozosos", misterioLatim: "Mysteria Gaudiosa" },
+    "terça-feira": { misterio: "Dolorosos", misterioLatim: "Mysteria Dolorosa" },
+    "quarta-feira": { misterio: "Gloriosos", misterioLatim: "Mysteria Gloriosa" },
+    "quinta-feira": { misterio: "Luminosos", misterioLatim: "Mysteria Luminosa" },
+    "sexta-feira": { misterio: "Dolorosos", misterioLatim: "Mysteria Dolorosa" },
+    "sábado": { misterio: "Gozosos", misterioLatim: "Mysteria Gaudiosa" }
 };
 
-const dayOfWeek = days[today.getDay()];
-const mysteryOfDay = mysteries[dayOfWeek];
+function highlightMystery() {
+    const hoje = new Date();
+    const diaDaSemana = hoje.toLocaleDateString('pt-BR', { weekday: 'long' }).toLowerCase();
 
-document.getElementById("day").textContent = `Today is ${dayOfWeek}.`;
-document.getElementById("mystery").textContent = `The mystery for today is: ${mysteryOfDay}.`;
+    for (let i = 1; i <= 4; i++) {
+        document.getElementById(`mystery-${i}`).classList.remove('highlight');
+    }
+
+    const todayMystery = day_mystery[diaDaSemana];
+
+    if (todayMystery) {
+        const buttonMapping = {
+            "Gloriosos": 1,
+            "Gozosos": 2,
+            "Dolorosos": 3,
+            "Luminosos": 4,
+        };
+
+        const buttonIndex = buttonMapping[todayMystery.misterio];
+        if (buttonIndex) {
+            document.getElementById(`mystery-${buttonIndex}`).classList.add('highlight');
+        }
+
+        const displayText = `${diaDaSemana.charAt(0).toUpperCase() + diaDaSemana.slice(1)}, ${todayMystery.misterioLatim}`;
+        document.getElementById("display-text").innerText = displayText;
+    }
+}
+
+window.onload = function() {
+    highlightMystery();
+};
