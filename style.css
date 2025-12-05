@@ -3,7 +3,7 @@ body {
     text-align: center;
     margin: 20px;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #F2F2F2;
     color: #333;
 }
 
@@ -77,6 +77,12 @@ table.center {
     transition: border 0.3s, box-shadow 0.3s;
     cursor: pointer;
     background-color: rgba(214, 214, 214, 0.8);
+}
+
+.mystery-button:hover {
+    transform: scale(1.05);
+    background-color: rgba(194, 255, 252, 0.5);
+    box-shadow: 0 0 50px rgba(194, 255, 252, 0.5);
 }
 
 .mystery-button .latim {

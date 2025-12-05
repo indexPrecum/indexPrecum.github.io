@@ -40,7 +40,7 @@ fn void setup_file(c2html_obj *obj, const char *title, const char *path) {
     char *file_name = strdup(__filename);
     sprintf(__filename, "%s/%s", path, file_name);
 
-    printf("Starting to write to %s\n\n", __filename);
+    printf("Starting to write to %s\n", __filename);
 
     FILE *file = fopen(__filename, "w");
     assert(file != NULL);
@@ -92,7 +92,7 @@ fn void c2html_print_file_size(long size, const char *filename) {
         index++;
     }
 
-    printf("Written %.2f%s to %s\n\n", size_units, units[index], filename);
+    printf("Written %.2f%s to %s\n", size_units, units[index], filename);
 }
 
 fn void end_file(c2html_obj *obj) {
@@ -228,6 +228,7 @@ typedef struct {
     bool in_line;
     char *in_line_text;
     char *id;
+    char *on_click;
 } cstm_tag_opt;
 
 fn void custom_tag_opt(const char *tag, cstm_tag_opt opt) {
@@ -248,6 +249,10 @@ fn void custom_tag_opt(const char *tag, cstm_tag_opt opt) {
 
         if (opt.id) {
             fprintf(file, " id=\"%s\"", opt.id);
+        }
+
+        if(opt.on_click) {
+            fprintf(file, " onclick=\"%s\"", opt.on_click);
         }
 
         fprintf(file, ">");
