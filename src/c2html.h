@@ -354,6 +354,7 @@ fn void span_opt(const char *text, _span_opt opt) {
 
 typedef struct {
     char *id;
+    char *on_click;
     char *css_class;
     bool dont_close;
 } button_options;
@@ -366,6 +367,7 @@ fn void button_opt(const char *text, button_options opt) {
     fprintf(file, "<button");
     if (opt.id) fprintf(file, " id=\"%s\"", opt.id);
     if (opt.css_class) fprintf(file, " class=\"%s\"", opt.css_class);
+    if(opt.on_click) fprintf(file, " onclick=\"%s\"", opt.on_click);
     fprintf(file, ">");
     fprintf(file, "%s", text);
     if (opt.dont_close) goto at_exit;

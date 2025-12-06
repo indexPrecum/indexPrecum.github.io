@@ -7,6 +7,18 @@ body {
     color: #333;
 }
 
+a {
+    color: blue;
+}
+
+a:hover {
+    color: orange;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
     font-size: 2em;
     color: black;
@@ -24,6 +36,28 @@ h3 {
 }
 
 @media (max-width: 600px){
+
+    .flag-container {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    td {
+        width: 100%;
+        border-spacing: 0;
+    }
+
     body {
         margin: 10px;
         padding: 10px;
@@ -50,10 +84,14 @@ h3 {
     font-size: 20px;
 }
 
-table, th, td {
-    border: none;
+table, th{
+    /*border: none;*/
     border-collapse: collapse;
     vertical-align: center;
+}
+
+td {
+    border-spacing: 10px;
 }
 
 table.center {
@@ -104,5 +142,49 @@ table.center {
     box-shadow: 0 0 50px rgba(255, 255, 0, 0.5);
 }
 
+.bordered-image {
+    border: 5px solid #000;
+    border-radius = 10px;
+}
 
+.flag-container {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
 
+.flag-container img {
+    display: block;
+    margin: 0 auto;
+}
+
+.big-text {
+    font-size: 48px;
+}
+
+.goback {
+    position: fixed;
+    top 10px;
+    left: 10px
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.goback-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 32px;
+    display: none;
+}
