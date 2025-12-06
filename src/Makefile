@@ -1,4 +1,4 @@
-all: ../index.html ../prayer/rosarium/gloriosa.html ../prayer/rosarium/gaudiosa.html ../prayer/rosarium/dolorosa.html
+all: ../index.html ../prayer/rosarium/gloriosa.html ../prayer/rosarium/gaudiosa.html ../prayer/rosarium/dolorosa.html ../prayer/rosarium/luminosa.html
 
 clear:
 	rm *.o
@@ -18,4 +18,9 @@ clear:
 ../prayer/rosarium/dolorosa.html: prayer_rosarium_dolorosa.c
 	cc prayer_rosarium_dolorosa.c -o prayer_rosarium_dolorosa.o
 	./prayer_rosarium_dolorosa.o
+
+../prayer/rosarium/luminosa.html: prayer_rosarium_luminosa.c
+	cc prayer_rosarium_luminosa.c -o prayer_rosarium_luminosa.o
+	./prayer_rosarium_luminosa.o
+
 
