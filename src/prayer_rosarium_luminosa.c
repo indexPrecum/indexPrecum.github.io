@@ -17,12 +17,13 @@ int main(void) {
 
     h1("Mysteria Luminosa");
 
+    /*
     custom_tag("table", .css_class = "center");
     custom_tag("tr");
     {
         custom_tag("td", .css_class = "flag-container");
         {
-            /* jump to latin */
+            // jump to latin 
             add_img("https://flagsapi.com/VA/shiny/48.png");
             add_link("Latine", .href = "#latin");
         }
@@ -32,7 +33,7 @@ int main(void) {
 
         custom_tag("td", .css_class = "flag-container");
         {
-            /* jump to portuguese */
+            // jump to portuguese 
             add_img("https://flagsapi.com/BR/shiny/48.png");
             add_img("https://flagsapi.com/PT/shiny/48.png");
 
@@ -44,7 +45,7 @@ int main(void) {
 
         custom_tag("td", .css_class = "flag-container");
         {
-            /* jump to english */
+            // jump to english 
             add_img("https://flagsapi.com/US/shiny/48.png");
             add_img("https://flagsapi.com/GB/shiny/48.png");
 
@@ -54,10 +55,11 @@ int main(void) {
     }
     custom_tag("tr", .close = true);
     custom_tag("table", .close = true);
+    */
 
     custom_tag("hr");
     custom_tag("div", .id = "latin");
-    h1("Latine");
+    h1("Latim");
     br();
 
     add_text("Primum Mysterium Lucis", .do_paragraph = true, .strong = true);
@@ -105,6 +107,7 @@ int main(void) {
     add_text("Jesus institui a Eucaristia", .do_paragraph = true);
     br_repeat(2);
 
+    /*
     custom_tag("hr");
     custom_tag("div", .id = "english");
     h1("English");
@@ -129,6 +132,8 @@ int main(void) {
     add_text("Fifth Mystery of Light", .do_paragraph = true, .strong = true);
     add_text("The institution of the Eucharist", .do_paragraph = true);
     br_repeat(2);
+
+    */
 
     end_file(&luminosa);
     return 0;
