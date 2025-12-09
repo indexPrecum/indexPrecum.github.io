@@ -1,7 +1,11 @@
-all: ../index.html ../prayer/rosarium/gloriosa.html ../prayer/rosarium/gaudiosa.html ../prayer/rosarium/dolorosa.html ../prayer/rosarium/luminosa.html
+all: ../index.html rosary mass
 
 clear:
 	rm *.o
+
+rosary: ../prayer/rosarium/gloriosa.html ../prayer/rosarium/gaudiosa.html ../prayer/rosarium/dolorosa.html ../prayer/rosarium/luminosa.html
+
+mass: ../prayer/mass/asperges.html ../prayer/mass/kyrie.html
 
 ../index.html: index.c
 	cc index.c -o index.o
@@ -23,4 +27,11 @@ clear:
 	cc prayer_rosarium_luminosa.c -o prayer_rosarium_luminosa.o
 	./prayer_rosarium_luminosa.o
 
+../prayer/mass/asperges.html: prayer_mass_asperges.c
+	cc prayer_mass_asperges.c -o prayer_mass_asperges.o
+	./prayer_mass_asperges.o
+
+../prayer/mass/kyrie.html: prayer_mass_kyrie.c
+	cc prayer_mass_kyrie.c -o prayer_mass_kyrie.o
+	./prayer_mass_kyrie.o
 

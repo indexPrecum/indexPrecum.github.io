@@ -17,7 +17,7 @@ int main(void) {
 
         custom_tag("td");
 
-        h1("Sanctum Rosarium");
+        h1("Santo Rosário");
 
         custom_tag("hr");
 
@@ -29,7 +29,7 @@ int main(void) {
             {
                 custom_tag("div", .css_class = "latim", .in_line_text = "Mysteria Gloriosa");
                 custom_tag("div", .css_class = "portugues", .in_line_text = "Mistérios Gloriosos");
-                add_link("", .href= "teste");
+                add_link("", .href = "teste");
             }
             custom_tag("div", .close = true);
 
@@ -59,10 +59,27 @@ int main(void) {
         custom_tag("hr");
 
         custom_tag("td", .close = true);
-
     }
     custom_tag("tr", .close = true);
     custom_tag("table", .close = true);
+
+    h1("Orações e cantos da missa.");
+
+    custom_tag("div", .css_class = "prayer-container");
+    {
+        custom_tag("div", .css_class = "mystery-button", .on_click = "location.href='prayer/mass/asperges.html'");
+        {
+            custom_tag("div", .css_class = "latim", .in_line_text = "Asperges");
+        }
+        custom_tag("div", .close = true);
+
+        custom_tag("div", .css_class = "mystery-button", .on_click = "location.href='prayer/mass/kyrie.html'");
+        {
+            custom_tag("div", .css_class = "latim", .in_line_text = "Kyrie");
+        }
+        custom_tag("div", .close = true);
+    }
+    custom_tag("div", .close = true);
 
     end_file(&index);
     return 0;
