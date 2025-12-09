@@ -55,7 +55,7 @@ int main(void) {
     */
 
     custom_tag("hr");
-    custom_tag("div", .id = "latin");
+    custom_tag("div", .id = "latin", .css_class = "left-justified");
     h1("Latim");
     br();
 

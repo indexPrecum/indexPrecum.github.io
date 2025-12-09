@@ -23,7 +23,7 @@ int main(void) {
 
         custom_tag("h2", .id = "display-text", .in_line_text = "{Dia da semana}, {Mistério do dia}");
 
-        custom_tag("div", .id = "mystery-container", .css_class = "mystery-container");
+        custom_tag("div", .id = "mystery-container", .css_class = "prayer-container");
         {
             custom_tag("div", .id = "mystery-1", .on_click = "location.href='prayer/rosarium/gloriosa.html'", .css_class = "mystery-button");
             {

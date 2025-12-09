@@ -99,7 +99,7 @@ table.center {
     margin-right: auto;
 }
 
-.mystery-container {
+.prayer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -121,6 +121,12 @@ table.center {
     transform: scale(1.05);
     background-color: rgba(194, 255, 252, 0.5);
     box-shadow: 0 0 50px rgba(194, 255, 252, 0.5);
+}
+
+.left-justified {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .mystery-button .latim {
