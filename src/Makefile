@@ -5,7 +5,7 @@ clear:
 
 rosary: ../prayer/rosarium/gloriosa.html ../prayer/rosarium/gaudiosa.html ../prayer/rosarium/dolorosa.html ../prayer/rosarium/luminosa.html
 
-mass: ../prayer/mass/asperges.html ../prayer/mass/kyrie.html ../prayer/mass/gloria.html
+mass: ../prayer/mass/asperges.html ../prayer/mass/kyrie.html ../prayer/mass/gloria.html ../prayer/mass/credo.html
 
 ../index.html: index.c
 	cc index.c -o index.o
@@ -38,3 +38,7 @@ mass: ../prayer/mass/asperges.html ../prayer/mass/kyrie.html ../prayer/mass/glor
 ../prayer/mass/gloria.html: prayer_mass_gloria.c 
 	cc prayer_mass_gloria.c -o prayer_mass_gloria.o
 	./prayer_mass_gloria.o
+
+../prayer/mass/credo.html: prayer_mass_credo.c 
+	cc prayer_mass_credo.c -o prayer_mass_credo.o
+	./prayer_mass_credo.o
