@@ -50,6 +50,22 @@ int main(void) {
 
         h1("Português");
         br();
+
+        add_line("Creio em um só Deus, Pai todo-poderoso, Criador do céu e da terra, de todas as coisas visíveis e invisíveis.");
+        add_line("Creio em um só Senhor, Jesus Cristo, Filho Unigênito de Deus, nascido do Pai antes de todos os séculos.");
+        add_line("Deus de Deus, luz da luz, Deus verdadeiro de Deus verdadeiro, gerado, não criado, consubstancial ao Pai.");
+        add_line("Por Ele todas as coisas foram feitas.");
+        add_line("E, por nós, homens, e para a nossa salvação, desceu dos céus:");
+        add_line("E se encarnou pelo Espírito Santo, no seio da Virgem Maria, e se fez homem.");
+        add_line("Também por nos foi crucificado sob Pôncio Pilatos; padeceu e foi sepultado.");
+        add_line("Ressucitou ao terceiro dia, conforme as Escrituras;");
+        add_line("E subiu aos céus, onde está sentado à direita do Pai.");
+        add_line("E de novo há de vir em sua glória, para julgar os vivos e os mortos; e o seu reino não terá fim.");
+        add_line("Creio no Espírito Santo, Senhor que dá a vida, e procede do Pai e do Filho;");
+        add_line("E com o Pai e o Filho é adorado e glorificado: Ele que falou pelos profetas.");
+        add_line("Creio na Igreja una, santa, católica e apostólica. Professo um só batismo para remissao dos pecados.");
+        add_line("Espero a ressurreição dos mortos; E a vida do mundo que há de vir.");
+        add_line("Amén.");
     }
     custom_tag("div", .close = true);
 

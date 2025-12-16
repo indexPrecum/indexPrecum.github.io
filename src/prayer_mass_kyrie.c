@@ -26,14 +26,20 @@ int main(void) {
 
         add_text("Kyrie eleison.", .do_paragraph = true);
         add_text("Kyrie eleison.", .do_paragraph = true);
+        add_text("Kyrie eleison.", .do_paragraph = true);
         add_text("Christe eleison.", .do_paragraph = true);
         add_text("Christe eleison.", .do_paragraph = true);
+        add_text("Christe eleison.", .do_paragraph = true);
+        add_text("Kyrie eleison.", .do_paragraph = true);
         add_text("Kyrie eleison.", .do_paragraph = true);
         add_text("Kyrie eleison.", .do_paragraph = true);
 
         custom_tag("hr");
 
         h1("Português");
+        span("(É mais comum a repetição somente duas vezes nas traduções em Português)", .css_class ="portugues");
+        br();
+        br();
         br();
 
         add_text("Senhor, tende piedade de nós.", .do_paragraph = true);

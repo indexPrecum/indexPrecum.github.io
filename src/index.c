@@ -70,12 +70,14 @@ int main(void) {
         custom_tag("div", .css_class = "mystery-button", .on_click = "location.href='prayer/mass/asperges.html'");
         {
             custom_tag("div", .css_class = "latim", .in_line_text = "Asperges");
+            custom_tag("div", .css_class = "portugues", .in_line_text = "Aspergei-me");
         }
         custom_tag("div", .close = true);
 
         custom_tag("div", .css_class = "mystery-button", .on_click = "location.href='prayer/mass/kyrie.html'");
         {
             custom_tag("div", .css_class = "latim", .in_line_text = "Kyrie");
+            custom_tag("div", .css_class = "portugues", .in_line_text = "Tende piedade de nós");
         }
         custom_tag("div", .close = true);
 
@@ -83,6 +85,20 @@ int main(void) {
         {
             custom_tag("div", .css_class = "latim", .in_line_text = "Glória in excélsis Deo");
             custom_tag("div", .css_class = "portugues", .in_line_text = "Glória a Deus nas Alturas");
+        }
+        custom_tag("div", .close = true);
+
+        custom_tag("div", .css_class = "mystery-button", .on_click = "location.href='prayer/mass/credo.html'");
+        {
+            custom_tag("div", .css_class = "latim", .in_line_text = "Credo");
+            custom_tag("div", .css_class = "portugues", .in_line_text = "Credo Niceno-Constantinopolitano");
+        }
+        custom_tag("div", .close = true);
+
+        custom_tag("div", .css_class = "mystery-button", .on_click = "location.href='prayer/mass/sanctus.html'");
+        {
+            custom_tag("div", .css_class = "latim", .in_line_text = "Sanctus");
+            custom_tag("div", .css_class = "portugues", .in_line_text = "Santo (Hino angélico)");
         }
         custom_tag("div", .close = true);
     }
