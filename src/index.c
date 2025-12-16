@@ -101,6 +101,13 @@ int main(void) {
             custom_tag("div", .css_class = "portugues", .in_line_text = "Santo (Hino angélico)");
         }
         custom_tag("div", .close = true);
+
+        custom_tag("div", .css_class = "mystery-button", .on_click = "location.href='prayer/mass/agnus.html'");
+        {
+            custom_tag("div", .css_class = "latim", .in_line_text = "Agnus Dei");
+            custom_tag("div", .css_class = "portugues", .in_line_text = "Cordeiro de Deus");
+        }
+        custom_tag("div", .close = true);
     }
     custom_tag("div", .close = true);
 
