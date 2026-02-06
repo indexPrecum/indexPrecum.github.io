@@ -25,24 +25,22 @@ int main(void) {
         h1("Latim");
         br();
 
-        add_text("Asperges me, Domine, hyssopo et mundabor.", .do_paragraph = true);
-        add_text("Lavabis me et super nivem dealbabor.", .do_paragraph = true);
-        add_text("Miserere mei, Deus, secundum magnam misericordiam tuam.", .do_paragraph = true);
-        add_text("Glória Patri et Fílio, et Spirítui Sancto, sicut erat in princípio, et nunc et semper, et in saecula saeculorm.",
-                .do_paragraph = true);
-        add_text("Amen.", .do_paragraph = true);
+        TextLines asperges_LA = read_file("prayer_text/asperges_LA.txt");
+
+        for(size_t i = 0; i < asperges_LA.count; ++i) {
+            add_text(asperges_LA.lines[i], .do_paragraph = true);
+        }
 
         custom_tag("hr");
 
         h1("Português");
         br();
 
-        add_text("Asperges-me, Senhor, com o hissopo e ficarei puro.", .do_paragraph = true);
-        add_text("Lava-me, e ficarei mais branco que a neve.", .do_paragraph = true);
-        add_text("Tem piedade de mim, ó Deus, segundo a sua misericórdia infinita.", .do_paragraph = true);
-        add_text("Glória ao Pai e ao Filho, e ao Espírito Santo, como era no princípio, agora e sempre, e pelos séculos dos sécuilos",
-                .do_paragraph = true);
-        add_text("Amém", .do_paragraph = true);
+        TextLines asperges_BR = read_file("prayer_text/asperges_BR.txt");
+
+        for(size_t i = 0; i < asperges_BR.count; ++i) {
+            add_text(asperges_BR.lines[i], .do_paragraph = true);
+        }
     }
     custom_tag("div", .close = true);
 

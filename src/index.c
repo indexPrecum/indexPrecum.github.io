@@ -109,9 +109,15 @@ int main(void) {
         }
         custom_tag("div", .close = true);
 
-        h1("Em Construção...");
     }
     custom_tag("div", .close = true);
+
+    custom_tag("center");
+    br_repeat(5);
+    h1("Em Construção...");
+    custom_tag("center", .close = true);
+
+
 
     end_file(&index);
     return 0;
