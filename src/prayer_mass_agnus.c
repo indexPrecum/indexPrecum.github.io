@@ -28,34 +28,22 @@ int main(void) {
         h1("Latim");
         br();
 
-        add_line("Agnus dei, qui tollis peccata mundi.");
-        add_line("R. miserere nobis.");
-        br();
+        TextLines agnus_LA = read_file("prayer_text/agnus_LA.txt");
 
-        add_line("Agnus dei, qui tollis peccata mundi.");
-        add_line("R. miserere nobis.");
-        br();
-
-        add_line("Agnus dei, qui tollis peccata mundi.");
-        add_line("R. Dona nobis pacem.");
-        br();
+        for (size_t i = 0; i < agnus_LA.count; ++i) {
+            add_line(agnus_LA.lines[i]);
+        }
 
         custom_tag("hr");
 
         h1("Português");
         br();
 
-        add_line("Cordeiro de Deus, que tirais o pecado do mundo.");
-        add_line("R. Tende piedade de nós.");
-        br();
+        TextLines agnus_BR = read_file("prayer_text/agnus_BR.txt");
 
-        add_line("Cordeiro de Deus, que tirais o pecado do mundo.");
-        add_line("R. Tende piedade de nós.");
-        br();
-
-        add_line("Cordeiro de Deus, que tirais o pecado do mundo.");
-        add_line("R. Dai-nos a paz.");
-        br();
+        for (size_t i = 0; i < agnus_BR.count; ++i) {
+            add_line(agnus_BR.lines[i]);
+        }
     }
     custom_tag("div", .close = true);
 

@@ -1,4 +1,4 @@
-all: ../index.html rosary mass
+all: ../index.html rosary mass general
 
 clear:
 	rm *.o
@@ -6,6 +6,9 @@ clear:
 rosary: ../prayer/rosarium/gloriosa.html ../prayer/rosarium/gaudiosa.html ../prayer/rosarium/dolorosa.html ../prayer/rosarium/luminosa.html
 
 mass: ../prayer/mass/asperges.html ../prayer/mass/kyrie.html ../prayer/mass/gloria.html ../prayer/mass/credo.html ../prayer/mass/sanctus.html ../prayer/mass/agnus.html
+
+general: ../prayer/general/pater_noster.html ../prayer/general/salve_regina.html 
+
 
 ../index.html: index.c
 	cc index.c -o index.o
@@ -26,6 +29,9 @@ mass: ../prayer/mass/asperges.html ../prayer/mass/kyrie.html ../prayer/mass/glor
 ../prayer/rosarium/luminosa.html: prayer_rosarium_luminosa.c
 	cc prayer_rosarium_luminosa.c -o prayer_rosarium_luminosa.o
 	./prayer_rosarium_luminosa.o
+
+
+###############
 
 ../prayer/mass/asperges.html: prayer_mass_asperges.c
 	cc prayer_mass_asperges.c -o prayer_mass_asperges.o
@@ -50,3 +56,14 @@ mass: ../prayer/mass/asperges.html ../prayer/mass/kyrie.html ../prayer/mass/glor
 ../prayer/mass/agnus.html: prayer_mass_agnus.c
 	cc prayer_mass_agnus.c -o prayer_mass_agnus.o
 	./prayer_mass_agnus.o
+
+###############################
+
+../prayer/general/pater_noster.html: prayer_general_pater_noster.c 
+	cc prayer_general_pater_noster.c -o prayer_general_pater_noster.o
+	./prayer_general_pater_noster.o
+
+
+../prayer/general/salve_regina.html: prayer_general_salve_regina.c 
+	cc prayer_general_salve_regina.c -o prayer_general_salve_regina.o
+	./prayer_general_salve_regina.o

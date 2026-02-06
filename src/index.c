@@ -63,7 +63,7 @@ int main(void) {
     custom_tag("tr", .close = true);
     custom_tag("table", .close = true);
 
-    h1("Orações e cantos da missa.");
+    h1("Orações e cantos da Santa missa.");
 
     custom_tag("div", .css_class = "prayer-container");
     {
@@ -83,7 +83,7 @@ int main(void) {
 
         custom_tag("div", .css_class = "mystery-button", .on_click = "location.href='prayer/mass/gloria.html'");
         {
-            custom_tag("div", .css_class = "latim", .in_line_text = "Glória in excélsis Deo");
+            custom_tag("div", .css_class = "latim", .in_line_text = "Gloria in excélsis Deo");
             custom_tag("div", .css_class = "portugues", .in_line_text = "Glória a Deus nas Alturas");
         }
         custom_tag("div", .close = true);
@@ -108,10 +108,36 @@ int main(void) {
             custom_tag("div", .css_class = "portugues", .in_line_text = "Cordeiro de Deus");
         }
         custom_tag("div", .close = true);
-
-        h1("Em Construção...");
     }
     custom_tag("div", .close = true);
+
+    custom_tag("hr");
+
+    h1("Orações");
+
+    custom_tag("div", .css_class = "prayer-container");
+    {
+
+        custom_tag("div", .css_class = "mystery-button", .on_click = "location.href='prayer/general/pater_noster.html'");
+        {
+            custom_tag("div", .css_class = "latim", .in_line_text = "Pater Noster");
+            custom_tag("div", .css_class = "portugues", .in_line_text = "Pai nosso");
+        }
+        custom_tag("div", .close = true);
+
+        custom_tag("div", .css_class = "mystery-button", .on_click = "location.href='prayer/general/salve_regina.html'");
+        {
+            custom_tag("div", .css_class = "latim", .in_line_text = "Salve Regina");
+            custom_tag("div", .css_class = "portugues", .in_line_text = "Salve Rainha");
+        }
+        custom_tag("div", .close = true);
+    }
+    custom_tag("div", .close = true);
+
+    custom_tag("center");
+    br_repeat(5);
+    h1("Em Construção...");
+    custom_tag("center", .close = true);
 
     end_file(&index);
     return 0;
