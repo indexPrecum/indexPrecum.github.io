@@ -83,7 +83,7 @@ int main(void) {
 
         custom_tag("div", .css_class = "mystery-button", .on_click = "location.href='prayer/mass/gloria.html'");
         {
-            custom_tag("div", .css_class = "latim", .in_line_text = "Glória in excélsis Deo");
+            custom_tag("div", .css_class = "latim", .in_line_text = "Gloria in excélsis Deo");
             custom_tag("div", .css_class = "portugues", .in_line_text = "Glória a Deus nas Alturas");
         }
         custom_tag("div", .close = true);
