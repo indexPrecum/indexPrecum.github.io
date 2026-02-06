@@ -29,22 +29,24 @@ int main(void) {
         h1("Latim");
         br();
 
-        add_line("Sanctus, Sanctus, Sanctus, Dominus Deus Sabaoth!");
-        add_line("Pleni sunt caeli et terra gloria Tua.");
-        add_line("Hosanna in excelsis!");
-        add_line("Benedictus, qui venit in Nomine Domini.");
-        add_line("Hosanna in excelsis.");
+        TextLines sanctus_LA = read_file("prayer_text/sanctus_LA.txt");
 
+        for (size_t i = 0; i < sanctus_LA.count; ++i) {
+            add_line(sanctus_LA.lines[i]);
+        }
+        
         custom_tag("hr");
 
         h1("Português");
         br();
 
-        add_line("Santo, Santo Santo, Senhor Deus do universo!");
-        add_line("O céu e a terra programam a Vossa Glória.");
-        add_line("Hosana nas alturas!");
-        add_line("Bendito o que vem em nome do Senhor.");
-        add_line("Hosana nas alturas!");
+        TextLines sanctus_BR = read_file("prayer_text/sanctus_BR.txt");
+
+        for (size_t i = 0; i < sanctus_BR.count; ++i) {
+            add_line(sanctus_BR.lines[i]);
+        }
+
+
     }
     custom_tag("div", .close = true);
 
