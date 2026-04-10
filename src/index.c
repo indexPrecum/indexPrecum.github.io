@@ -131,6 +131,30 @@ int main(void) {
             custom_tag("div", .css_class = "portugues", .in_line_text = "Salve Rainha");
         }
         custom_tag("div", .close = true);
+
+        custom_tag("div", .css_class = "mystery-button", .on_click = "location.href='prayer/general/oratio_fatimae.html'");
+        {
+            custom_tag("div", .css_class = "latim", .in_line_text = "Oratio Fatimæ");
+            custom_tag("div", .css_class = "portugues", .in_line_text = "Oração de Fátima");
+        }
+        custom_tag("div", .close = true);
+
+        custom_tag("div", .css_class = "mystery-button", .on_click = "location.href='prayer/general/confiteor.html'");
+        {
+            custom_tag("div", .css_class = "latim", .in_line_text = "Confiteor");
+            custom_tag("div", .css_class = "portugues", .in_line_text = "Confesso");
+        }
+        custom_tag("div", .close = true);
+
+        custom_tag("div", .css_class = "mystery-button", .on_click = "location.href='prayer/general/contritionis.html'");
+        {
+            custom_tag("div", .css_class = "latim", .in_line_text = "Actus Contritionis");
+            custom_tag("div", .css_class = "portugues", .in_line_text = "Ato de Contrição");
+        }
+        custom_tag("div", .close = true);
+
+
+
     }
     custom_tag("div", .close = true);
 

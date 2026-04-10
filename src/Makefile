@@ -7,7 +7,7 @@ rosary: ../prayer/rosarium/gloriosa.html ../prayer/rosarium/gaudiosa.html ../pra
 
 mass: ../prayer/mass/asperges.html ../prayer/mass/kyrie.html ../prayer/mass/gloria.html ../prayer/mass/credo.html ../prayer/mass/sanctus.html ../prayer/mass/agnus.html
 
-general: ../prayer/general/pater_noster.html ../prayer/general/salve_regina.html 
+general: ../prayer/general/pater_noster.html ../prayer/general/salve_regina.html ../prayer/general/oratio_fatimae.html ../prayer/general/confiteor.html ../prayer/general/contritionis.html
 
 
 ../index.html: index.c
@@ -67,3 +67,15 @@ general: ../prayer/general/pater_noster.html ../prayer/general/salve_regina.html
 ../prayer/general/salve_regina.html: prayer_general_salve_regina.c 
 	cc prayer_general_salve_regina.c -o prayer_general_salve_regina.o
 	./prayer_general_salve_regina.o
+
+../prayer/general/oratio_fatimae.html: prayer_general_oratio_fatimae.c 
+	cc prayer_general_oratio_fatimae.c -o prayer_general_oratio_fatimae.o 
+	./prayer_general_oratio_fatimae.o
+
+../prayer/general/confiteor.html: prayer_general_confiteor.c 
+	cc prayer_general_confiteor.c -o prayer_general_confiteor.o 
+	./prayer_general_confiteor.o
+
+../prayer/general/contritionis.html: prayer_general_contritionis.c 
+	cc prayer_general_contritionis.c -o prayer_general_contritionis.o 
+	./prayer_general_contritionis.o
