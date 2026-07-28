@@ -13,51 +13,51 @@ Compiled with with GCC 15.2.1
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mysteria Gloriosa</title>
+    <title>Mysteria Dolorosa</title>
     <link href="../../style.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="goback">
 <button class="goback-button" onclick="go_back()">&larr; Go Back</button></div>
-<h1>Mysteria Gloriosa</h1>
+<h1>Mysteria Dolorosa</h1>
 <hr>
 
 <div class="left-justified" id="latin">
 <h1>Latim</h1><br>
 
 <strong>
-<p>Primum Mysterium Gloriae
+<p>Primum Mysterium Doloris
 </strong>
-<p>Iesus a mortuis resurgit
+<p>Iesus in Horto Gethsemani orat
 <br>
 <br>
 
 <strong>
-<p>Secundum Mysterium Gloriae
+<p>Secundum Mysterium Doloris
 </strong>
-<p>Iesus caelos ad Patris gloriam ascendit
+<p>Iesus flagellis ceaditur
 <br>
 <br>
 
 <strong>
-<p>Tertium Mysterium Gloriae
+<p>Tertium Mysterium Doloris
 </strong>
-<p>Spiritus Paráclitus supra discípulos descéndit
+<p>Iesus spinis coronatur
 <br>
 <br>
 
 <strong>
-<p>Quartum Mysterium Gloriae
+<p>Quartum Mysterium Doloris
 </strong>
-<p>Maria Virgo in caelum assúmpla est
+<p>Iesus crice oneratus Calvariae locum adit
 <br>
 <br>
 
 <strong>
-<p>Quintum Mysterium Gloriae
+<p>Quintum Mysterium Doloris
 </strong>
-<p>Maria Virgo in caelum regína coronátur
+<p>Iesus in crice moritur
 <br>
 <br>
 
@@ -67,37 +67,37 @@ Compiled with with GCC 15.2.1
 <h1>Português</h1><br>
 
 <strong>
-<p>Primeiro Mistério Glorioso
+<p>Primeiro Mistério Doloroso
 </strong>
-<p>Ressureição de Jesus
+<p>Agonia de Jesus no Horto das Oliveiras
 <br>
 <br>
 
 <strong>
-<p>Segundo Mistério Glorioso
+<p>Segundo Mistério Doloroso
 </strong>
-<p>Ascensão de Jesus à gloria do Pai
+<p>Flagelação de Jesus
 <br>
 <br>
 
 <strong>
-<p>Terceiro Mistério Glorioso
+<p>Terceiro Mistério Doloroso
 </strong>
-<p>Descida do Espírito Santo sobre os apóstolos
+<p>Jesus é coroado com espinhos
 <br>
 <br>
 
 <strong>
-<p>Quarto Mistério Glorioso
+<p>Quarto Mistério Doloroso
 </strong>
-<p>Assunção da Virgem Maria ao céu
+<p>Jesus carrega a cruz no caminho do Calvário
 <br>
 <br>
 
 <strong>
-<p>Quinto Mistério Glorioso
+<p>Quinto Mistério Doloroso
 </strong>
-<p>Coroação da Virgem Maria como rainha do céu
+<p>Jesus morre na cruz
 <br>
 <br>
 </div></div>

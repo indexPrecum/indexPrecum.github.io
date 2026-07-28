@@ -13,51 +13,51 @@ Compiled with with GCC 15.2.1
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mysteria Gloriosa</title>
+    <title>Mysteria Gaudiosa</title>
     <link href="../../style.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="goback">
 <button class="goback-button" onclick="go_back()">&larr; Go Back</button></div>
-<h1>Mysteria Gloriosa</h1>
+<h1>Mysteria Gaudiosa</h1>
 <hr>
 
 <div class="left-justified" id="latin">
 <h1>Latim</h1><br>
 
 <strong>
-<p>Primum Mysterium Gloriae
+<p>Primum Mysterium Gaudii
 </strong>
-<p>Iesus a mortuis resurgit
+<p>Angelus Domini nuntiavit Mariae
 <br>
 <br>
 
 <strong>
-<p>Secundum Mysterium Gloriae
+<p>Secundum Mysterium Gaudii
 </strong>
-<p>Iesus caelos ad Patris gloriam ascendit
+<p>Maria Elisabeth visitat
 <br>
 <br>
 
 <strong>
-<p>Tertium Mysterium Gloriae
+<p>Tertium Mysterium Gaudii
 </strong>
-<p>Spiritus Paráclitus supra discípulos descéndit
+<p>Iesus in Bethlehem nascitur
 <br>
 <br>
 
 <strong>
-<p>Quartum Mysterium Gloriae
+<p>Quartum Mysterium Gaudii
 </strong>
-<p>Maria Virgo in caelum assúmpla est
+<p>Puer Iesus in templo praesentatur
 <br>
 <br>
 
 <strong>
-<p>Quintum Mysterium Gloriae
+<p>Quintum Mysterium Gaudii
 </strong>
-<p>Maria Virgo in caelum regína coronátur
+<p>Puer Iesus in templo invenitur
 <br>
 <br>
 
@@ -67,37 +67,37 @@ Compiled with with GCC 15.2.1
 <h1>Português</h1><br>
 
 <strong>
-<p>Primeiro Mistério Glorioso
+<p>Primeiro Mistério Gozoso
 </strong>
-<p>Ressureição de Jesus
+<p>Anunciação do Anjo à Maria
 <br>
 <br>
 
 <strong>
-<p>Segundo Mistério Glorioso
+<p>Segundo Mistério Gozoso
 </strong>
-<p>Ascensão de Jesus à gloria do Pai
+<p>Maria visita sua prima, Isabel
 <br>
 <br>
 
 <strong>
-<p>Terceiro Mistério Glorioso
+<p>Terceiro Mistério Gozoso
 </strong>
-<p>Descida do Espírito Santo sobre os apóstolos
+<p>Menino Jesus nasce em Belém
 <br>
 <br>
 
 <strong>
-<p>Quarto Mistério Glorioso
+<p>Quarto Mistério Gozoso
 </strong>
-<p>Assunção da Virgem Maria ao céu
+<p>Menino Jesus é apresentado no templo
 <br>
 <br>
 
 <strong>
-<p>Quinto Mistério Glorioso
+<p>Quinto Mistério Gozoso
 </strong>
-<p>Coroação da Virgem Maria como rainha do céu
+<p>Encontro do menino Jesus no templo
 <br>
 <br>
 </div></div>

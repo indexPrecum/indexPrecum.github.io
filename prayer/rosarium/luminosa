@@ -13,51 +13,51 @@ Compiled with with GCC 15.2.1
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mysteria Gloriosa</title>
+    <title>Mysteria Luminosa</title>
     <link href="../../style.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="goback">
 <button class="goback-button" onclick="go_back()">&larr; Go Back</button></div>
-<h1>Mysteria Gloriosa</h1>
+<h1>Mysteria Luminosa</h1>
 <hr>
 
 <div class="left-justified" id="latin">
 <h1>Latim</h1><br>
 
 <strong>
-<p>Primum Mysterium Gloriae
+<p>Primum Mysterium Lucis
 </strong>
-<p>Iesus a mortuis resurgit
+<p>Iesus in Iordáne baptizátur
 <br>
 <br>
 
 <strong>
-<p>Secundum Mysterium Gloriae
+<p>Secundum Mysterium Lucis
 </strong>
-<p>Iesus caelos ad Patris gloriam ascendit
+<p>Iesus apud Canénse Matrimonium se autorevélat
 <br>
 <br>
 
 <strong>
-<p>Tertium Mysterium Gloriae
+<p>Tertium Mysterium Lucis
 </strong>
-<p>Spiritus Paráclitus supra discípulos descéndit
+<p>Iesus regnum Dei proclámat et ad conversiónem invitat
 <br>
 <br>
 
 <strong>
-<p>Quartum Mysterium Gloriae
+<p>Quartum Mysterium Lucis
 </strong>
-<p>Maria Virgo in caelum assúmpla est
+<p>Iesus in monte transfigurátur
 <br>
 <br>
 
 <strong>
-<p>Quintum Mysterium Gloriae
+<p>Quintum Mysterium Lucis
 </strong>
-<p>Maria Virgo in caelum regína coronátur
+<p>Iesus Eucharistiam institut
 <br>
 <br>
 
@@ -67,37 +67,37 @@ Compiled with with GCC 15.2.1
 <h1>Português</h1><br>
 
 <strong>
-<p>Primeiro Mistério Glorioso
+<p>Primeiro Mistério Luminoso
 </strong>
-<p>Ressureição de Jesus
+<p>Jesus é batizado no Rio Jordão
 <br>
 <br>
 
 <strong>
-<p>Segundo Mistério Glorioso
+<p>Segundo Mistério Luminoso
 </strong>
-<p>Ascensão de Jesus à gloria do Pai
+<p>Jesus se autorevela nas Bodas de Caná
 <br>
 <br>
 
 <strong>
-<p>Terceiro Mistério Glorioso
+<p>Terceiro Mistério Luminoso
 </strong>
-<p>Descida do Espírito Santo sobre os apóstolos
+<p>Jesus anuncia o reino de Deus e convida à conversão
 <br>
 <br>
 
 <strong>
-<p>Quarto Mistério Glorioso
+<p>Quarto Mistério Luminoso
 </strong>
-<p>Assunção da Virgem Maria ao céu
+<p>Transfiguração de Jesus no monte Tabor
 <br>
 <br>
 
 <strong>
-<p>Quinto Mistério Glorioso
+<p>Quinto Mistério Luminoso
 </strong>
-<p>Coroação da Virgem Maria como rainha do céu
+<p>Jesus institui a Eucaristia
 <br>
 <br>
 </div></div>

@@ -4,8 +4,8 @@
 void rosarium_gloriosa() {
 
     c2html_init("../prayer/rosarium/gloriosa", .css_path = "../../style.css", .js_path = "../common.js", .title = "Mysteria Gloriosa");
-
-#include "go_back_button.h"
+    
+    go_back_button();
 
     with_tag(h1) { add_text("Mysteria Gloriosa"); }
 

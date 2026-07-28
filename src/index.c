@@ -2,6 +2,15 @@
 
 
 #include "rosarium_gloriosa.c"
+#include "rosarium_gaudiosa.c"
+#include "rosarium_dolorosa.c"
+#include "rosarium_luminosa.c"
+
+#include "mass_asperges.c"
+#include "mass_vidi_aquam.c"
+#include "mass_kyrie.c"
+#include "mass_gloria.c"
+#include "mass_credo.c"
 
 int main(void) {
 
@@ -176,6 +185,15 @@ int main(void) {
 
 
     rosarium_gloriosa();
+    rosarium_gaudiosa();
+    rosarium_dolorosa();
+    rosarium_luminosa();
+
+    mass_asperges();
+    mass_vidi_aquam();
+    mass_kyrie();
+    mass_gloria();
+    mass_credo();
 
     return 0;
 }
